@@ -14,4 +14,5 @@ strip = scripts[0].strip()
 str_json = strip[27:len(strip)]
 loads = json.loads(str_json)
 print(type(loads))
-print(loads)
+result_ = loads['engine_search_result']
+print(result_[0])
