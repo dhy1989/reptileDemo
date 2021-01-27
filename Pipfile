@@ -6,6 +6,7 @@ name = "aliyun"
 [packages]
 requests = "~=2.2"
 lxml = "*"
+pandas = "*"
 
 [dev-packages]
 
