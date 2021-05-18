@@ -7,6 +7,9 @@ name = "aliyun"
 requests = "~=2.2"
 lxml = "*"
 pandas = "*"
+pymysql = "*"
+xlrd = "*"
+pyexcel-xls = "*"
 
 [dev-packages]
 
