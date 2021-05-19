@@ -1,0 +1,13 @@
+import csv
+
+string = '';
+with open('C:/Users/ThinkPad/Desktop/tb_bdmap_rail.csv', 'r') as f:
+    reader = csv.reader(f)
+    result = list(reader)
+    for i in range(len(result)):
+        if i != 0:
+            string += "[" + result[i][3] + "," + result[i][4] + "]"
+        if i != len(result) - 1 and i != 0:
+            string += ","
+with open('C:/Users/ThinkPad/Desktop/经纬度.txt', 'w') as f:
+    f.write(string)
