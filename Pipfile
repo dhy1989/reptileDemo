@@ -11,6 +11,9 @@ pymysql = "*"
 xlrd = "*"
 pyexcel-xls = "*"
 numpy = "*"
+openpyxl = "*"
+# pandas输出excel是需要安装
+xlwt = "*"
 
 [dev-packages]
 

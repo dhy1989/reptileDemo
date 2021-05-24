@@ -57,6 +57,19 @@ def data_to_csv():
     print(df)
     df.to_csv('site.csv')
 
+# 读取excel文件
+def read_excel():
+    excel = pd.read_excel("C:\\Users\\ThinkPad\\Desktop\\海外派客户确认发货导入预报_测试.xlsx")
+    print(excel.to_string())
+# 输出excel
+def write_excel():
+    nme = ["Google", "Runoob", "Taobao", "Wiki"]
+    st = ["www.google.com", "www.runoob.com", "www.taobao.com", "www.wikipedia.org"]
+    ag = [90, 40, 80, 98]
+    dict = {'name': nme, 'site': st, 'age': ag}
+    df = pd.DataFrame(dict)
+    print(df)
+    df.to_excel("site.xls")
 
 # head( n ) 方法用于读取前面的 n 行，如果不填参数 n ，默认返回 5 行
 def head_data():
@@ -140,7 +153,7 @@ def job_info():
     jobinfo = jobinfo.reset_index()  # 重置索引,之前的索引会变成列
     # jobinfo = jobinfo.reset_index(drop=True) # 直接删除索引,使用默认索引
     print(jobinfo)
-    print(jobinfo)
+    print(jobinfo.describe())
 
 
-job_info()
+
