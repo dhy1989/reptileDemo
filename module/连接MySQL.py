@@ -1,10 +1,10 @@
 import pymysql
 import pandas.io.sql as sql
 
-con = pymysql.connect(host='rm-k1hdeu6e84gx7zq2q.mysql.rds.aliyuncs.com',
-                      user='portal_test',
-                      password='Hmd(0Hd12fzx',
-                      db='crm_portal_test',
+con = pymysql.connect(host='192.168.23.200',
+                      user='dhy',
+                      password='123456',
+                      db='test',
                       charset='utf8',
                       )
 data = sql.read_sql('select * from bank limit 10', con)
